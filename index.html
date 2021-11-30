@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/print-js/1.6.0/print.js"
+        integrity="sha512-/fgTphwXa3lqAhN+I8gG8AvuaTErm1YxpUjbdCvwfTMyv8UZnFyId7ft5736xQ6CyQN4Nzr21lBuWWA9RTCXCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>yazdırma projesi</title>
+</head>
+
+<body>
+
+    <h1>Matematik Çalışma Kağıdı Hazırlayıcı</h1>
+
+    <div class="nav">
+        <div class="btns">
+            <button id="print_btn">YAZDIR</button>
+            <button id="download_btn">İNDİR</button>
+            <button id="newtab_btn">ÖNİZLE</button>
+        </div>
+        <div id="secenekler">
+            <select name="artimetik" id="artimetik">
+                <option value="toplama">Toplama</option>
+                <option value="cikarma">Çıkarma</option>
+                <option value="carpma">Çarpma</option>
+            </select>
+            <select name="basamak" id="basamak">
+                <option value="sec1">0 - 10 arası</option>
+                <option value="sec2">10 - 100 arası</option>
+                <option value="sec3" selected>100 - 1000 arası</option>
+                <option value="sec4">1000 - 10000 arası</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="icerik" id="icerik">
+        <div class="yazdir" id="yazdir">
+            <h1>K-TEK ARTİMETİK İŞLEMLER</h1>
+            <div class="islemler" id="islemler">
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>K-Tek Matematik Çalışma Kağıdı Hazırlama Projesi</p>
+    </footer>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
